@@ -2,95 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords"
-    content="contents marketer, 콘텐츠마케터, 콘텐츠 마케터, 마케터, 마케터 채용, 콘텐츠 마케터 함지영, 함지영, 마케터 함지영, 모딧 함지영, 로켓펀치, 사람인, 잡코리아, 원티드">
-  <title>Hamjiyoung Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,900&display=swap"
-    rel="stylesheet">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Personal - Free Bulma template</title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- Bulma Version 0.8.x-->
   <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/personal.css">
   <script async type="text/javascript" src="../js/bulma.js"></script>
-  <style>
-    .mainfont-custom {
-      font-weight: 900;
-      font-size: 70px;
-    }
-
-    .body {
-      text-align: center;
-    }
-
-    .has-same-height .card {
-      height: 320px;
-      overflow: hidden;
-    }
-
-    .card-content h3 {
-      text-align: center;
-    }
-
-    .table-profile td,
-    th {
-      border: none !important;
-    }
-
-    .table-profile td:first-of-type {
-      font-weight: bold;
-    }
-
-    .skills-content .media {
-      margin: 0 !important;
-      padding: 4px !important;
-      border: 0 !important;
-    }
-
-    .skills-content .progress {
-      height: 4px !important;
-    }
-
-    .custom-tags {
-      text-align: center !important;
-      display: block;
-    }
-
-    .portfolio-container .card {
-      margin-bottom: 2em;
-    }
-
-    .section-heading {
-      text-align: center;
-      margin-top: 1em;
-      margin-bottom: 6em;
-    }
-
-
-    * {
-      font-family: 'Noto Sans KR', sans-serif;
-    }
-  </style>
-  <script>
-    // 메뉴 클릭 시 페이지 이동 함수 추가
-    $(document).ready(function () {
-
-      // Check for click events on the navbar burger icon
-      $(".navbar-burger").click(function () {
-
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
-
-      });
-    });
-  </script>
 </head>
 
-<body class="body">
+<body>
   <!-- Navigation bar -->
-  <nav class="navbar is-black is-fixed-top">
+  <nav class="navbar is-link is-fixed-top">
     <div class="navbar-brand">
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
         <span></span>
@@ -136,16 +63,15 @@
   </nav>
 
   <!-- Header -->
-  <section class="hero is-black is-fullheight is-fullheight-with-navbar">
+  <section class="hero is-link is-fullheight is-fullheight-with-navbar">
     <div class="hero-body">
       <div class="container">Hello! I am
         <h1 class="title is-1">
-          Ham Jiyoung
+          Minion Tim
         </h1>
-        <h2 class="subtitle is-4">
-          Contents Marketer
+        <h2 class="subtitle is-3">
+          Full Stack Web Developer
         </h2>
-        <br>and more...?
       </div>
     </div>
   </section>
@@ -154,23 +80,25 @@
   <section class="section" id="about">
     <!-- Title -->
     <div class="section-heading">
-      <h3 class="title is-2 is-black">About Me</h3>
-      <h4 class="subtitle is-5">안녕하신가, 나는 지영! </h4>
+      <h3 class="title is-2">About Me</h3>
+      <h4 class="subtitle is-5">Jack of all trades, master of "some"</h4>
       <div class="container">
-        <p>콘텐츠 마케터이다. <strong>3년 차</strong>A부터 Z까지의 경험을 갖고 있는
-          <strong>스타트업의 다양한 경험과</strong>, 언제나 새로운 경험 필요하다. 다양한 업무 능력 향상을 위해</p>
+        <p>Web developer with more than <strong>4 years</strong> of well-rounded experience with a degree in the
+          field of
+          <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for <strong>Coffee</strong>.
+          Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+          believes
+          in gaining a competitive edge and giving back to the community.</p>
       </div>
     </div>
 
     <div class="columns has-same-height is-gapless">
-      <!-- has-same-height가 column에만 작용.
-        content크기는 달라서 원하는대로 작동하지 않는다. 해결 필요! 
-      4월 14일 해결/css 파일이 불러와지지 않아 적용이 되지 않은 것. 그래서 본문에 통채로 추가해버림-->
       <div class="column">
         <!-- Profile -->
         <div class="card">
           <div class="card-content">
             <h3 class="title is-4">Profile</h3>
+
             <div class="content">
               <table class="table-profile">
                 <tr>
@@ -178,24 +106,25 @@
                   <th colspan="2"></th>
                 </tr>
                 <tr>
-                  <td>Address</td>
-                  <td>서울특별시</td>
+                  <td>Address:</td>
+                  <td>Guru's Lab</td>
                 </tr>
                 <tr>
-                  <td>Phone</td>
-                  <td>010-7456-1526</td>
+                  <td>Phone:</td>
+                  <td>0123-456789</td>
                 </tr>
                 <tr>
-                  <td>Email</td>
-                  <td>lovemu1220@naver.com</td>
+                  <td>Email:</td>
+                  <td>minion@despicable.me</td>
                 </tr>
               </table>
             </div>
             <br>
             <div class="buttons has-addons is-centered">
-              <a href="https://www.rocketpunch.com/@9853a6386b474c64" target="_blank" class="button is-dark">RocketPunch</a>
-              <a href="https://blog.naver.com/lovemu1220" target="_blank" class="button is-dark">Blog</a>
-              <a href="https://github.com/HAMJiyoung/myproject" target="_blank" class="button is-dark">Github</a>
+              <a href="#" class="button is-link">Github</a>
+              <a href="#" class="button is-link">LinkedIn</a>
+              <a href="#" class="button is-link">Twitter</a>
+              <a href="#" class="button is-link">CodeTrace</a>
             </div>
           </div>
         </div>
@@ -205,7 +134,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-4by3">
-              <img src="C:\Users\함지영\Documents\GitHub\myproject\face_02.png" alt="Placeholder image">
+              <img src="https://source.unsplash.com/random/1280x960" alt="Placeholder image">
             </figure>
           </div>
         </div>
@@ -221,9 +150,9 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Adobe Photoshop</strong>
+                      <strong>JavaScript:</strong>
                       <br>
-                      <progress class="progress is-success" value="90" max="100"></progress>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
                     </p>
                   </div>
                 </div>
@@ -233,9 +162,9 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Adobe Premiere Pro</strong>
+                      <strong>Vue.js:</strong>
                       <br>
-                      <progress class="progress is-success" value="70" max="100"></progress>
+                      <progress class="progress is-primary" value="90" max="100"></progress>
                     </p>
                   </div>
                 </div>
@@ -245,9 +174,9 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Copywriting</strong>
+                      <strong>Node.js:</strong>
                       <br>
-                      <progress class="progress is-success" value="75" max="100"></progress>
+                      <progress class="progress is-primary" value="75" max="100"></progress>
                     </p>
                   </div>
                 </div>
@@ -257,9 +186,21 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <strong>Marketing Strategy</strong>
+                      <strong>HTML5/CSS3</strong>
                       <br>
-                      <progress class="progress is-success" value="80" max="100"></progress>
+                      <progress class="progress is-primary" value="95" max="100"></progress>
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="media">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <strong>Databases</strong>
+                      <br>
+                      <progress class="progress is-primary" value="66" max="100"></progress>
                     </p>
                   </div>
                 </div>
@@ -287,23 +228,24 @@
   <section class="section" id="services">
     <div class="section-heading">
       <h3 class="title is-2">Services</h3>
-      <h4 class="subtitle is-5">3년 차 콘텐츠 마케터로 무엇을 할 수 있을까요?</h4>
-    </div><br>
+      <h4 class="subtitle is-5">What can I do for you?</h4>
+    </div>
     <div class="container">
       <div class="columns">
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">광고 전략 수립</h4>
-              기간별/예산별 최적화된 마케팅 계획을 수립합니다. 한정된 자원 안에서 빠르게 결정하고 꼼꼼하게 진행합니다.
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
             </div>
           </div>
         </div>
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">데이터 분석</h4>
-              구글 애즈, SNS 광고와 같은 유료 광고 시 A/B 테스트 등을 통한 데이터를 분석하여 다음 액션을 결정합니다.
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
             </div>
           </div>
         </div>
@@ -313,16 +255,17 @@
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">SNS 운영</h4>
-              인스타그램, 페이스북 그룹 등 각종 SNS 및 플랫폼의 특성을 파악하여 브랜드 채널을 운영합니다.
+              <h4 class="title is-5">Front End Web Development</h4>
+              Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+              Vue.js.
             </div>
           </div>
         </div>
         <div class="column">
           <div class="box">
             <div class="content">
-              <h4 class="title is-5">크리에이티브 제작</h4>
-              어도비 포토샵, 프리미어를 이용한 광고와 기타 프로젝트에 필요한 이미지/영상 기획 및 제작이 가능합니다.
+              <h4 class="title is-5">Back End Web Development</h4>
+              Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
             </div>
           </div>
         </div>
@@ -334,12 +277,12 @@
   <section class="section" id="resume">
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
-      <h4 class="subtitle is-5">제가 지금까지 해온 일이에요.</h4>
-      <a href="#" class="button is-dark is-medium">
+      <h4 class="subtitle is-5">More about my past</h4>
+      <a href="#" class="button is-link is-medium">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
-        <span>Download</span>
+        <span>Download My Resume</span>
       </a>
     </div>
   </section>
@@ -349,9 +292,9 @@
     <div class="container">
       <div class="section-heading">
         <h3 class="title is-2">Portfolio</h3>
-        <h4 class="subtitle is-5">자랑스러운 제 작품을 감상해보세요.</h4>
+        <h4 class="subtitle is-5">My latest works</h4>
       </div>
-
+      <br>
 
       <div class="container portfolio-container">
         <div class="columns">
@@ -360,25 +303,25 @@
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">
-                  <!-- 카드 서버 작업 1. 제목 찾기 -->
-                  <span>소름 돋는 타로점, 타로문</span>
+                  <span>Admin <small>(Light)</small></span>
                   <span class="is-pulled-right">
-                    <span class="tag is-default">Youtube</span>
-                    <span class="tag is-default">Web</span>
+                    <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                      <span class="tag is-default">v0.7.2</span>
+                    </a>
+                    <span class="tag is-default">Desktop</span>
+                    <span class="tag is-danger">WIP</span>
                   </span>
                 </p>
               </header>
               <div class="card-content">
                 <figure class="image">
-                  <!-- 카드 서버 작업 2. 썸네일 찾기 -->
-                  <img
-                    src="https://i.ytimg.com/vi/LFewTDZAI1Q/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBHggouYZsQcMZRK4v59rpDqp7jxw"
-                    alt="Thumbnail">
+                  <img src="../images/admin.png" alt="Admin template screenshot">
                 </figure>
               </div>
               <footer class="card-footer">
-                <!-- 버튼 색상 변경/ 링크 새창에서 띄우기 -->
-                <a href="https://www.youtube.com/watch?v=LFewTDZAI1Q" class="card-footer-item">보러가기</a>
+                <a href="templates/admin.html" class="card-footer-item">Preview</a>
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html" class="card-footer-item">Source
+                  Code</a>
               </footer>
             </div>
             <!-- cards -->
@@ -402,8 +345,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -428,8 +370,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/forum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/forum.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/forum.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -454,8 +395,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/instaAlbum.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/instaAlbum.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/instaAlbum.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -480,8 +420,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/landing.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -509,8 +448,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/band.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/band.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/band.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -535,8 +473,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/cheatsheet.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cheatsheet.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cheatsheet.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -561,8 +498,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/hero.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -587,8 +523,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/kanban.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -613,8 +548,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/login.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/login.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/login.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -641,8 +575,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/blog.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/blog.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/blog.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -667,8 +600,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/cover.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cover.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cover.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -693,8 +625,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/inbox.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/inbox.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/inbox.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -719,8 +650,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/kanban[search].html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban[search].html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban[search].html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -745,8 +675,7 @@
               </div>
               <footer class="card-footer">
                 <a href="templates/modal-cards.html" class="card-footer-item">Preview</a>
-                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/modal-cards.html"
-                  class="card-footer-item">Source
+                <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/modal-cards.html" class="card-footer-item">Source
                   Code</a>
               </footer>
             </div>
@@ -756,13 +685,45 @@
     </div>
   </section>
 
+  <!-- Achievement Level -->
+  <!-- <section class="section">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Tweets</p>
+          <p class="title">3,456</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Following</p>
+          <p class="title">123</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Followers</p>
+          <p class="title">456K</p>
+        </div>
+      </div>
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">Likes</p>
+          <p class="title">789</p>
+        </div>
+      </div>
+    </nav>
+  </section> -->
+
+
   <!-- Contact -->
   <section class="section" id="contact">
     <div class="container">
       <div class="section-heading">
         <h3 class="title is-2">Contact</h3>
-        <h4 class="subtitle is-5">저와 이야기 하고 싶으시다면?</h4>
+        <h4 class="subtitle is-5">Get in touch</h4>
       </div>
+      <br>
 
       <div class="columns">
         <div class="column is-6 is-offset-3">
@@ -791,14 +752,12 @@
               </div>
             </div>
 
-            <div class="field is-grouped is-grouped-centered has-text-centered">
+            <div class="field is-grouped has-text-centered">
               <div class="control">
-                <button class="button is-dark is-large">
-                  <span class="icon">
+                <button class="button is-link is-large"><span class="icon">
                     <i class="fas fa-envelope"></i>
                   </span>
-                  <span>Submit</span>
-                </button>
+                  <span>Submit</span></button>
               </div>
             </div>
           </div>
