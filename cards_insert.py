@@ -1,0 +1,17 @@
+from flask import Flask, render_template, jsonify, request
+app = Flask(__name__)
+
+from pymongo import MongoClient
+client = MongoClient('mongodb://test:test@3.34.46.136', 27017)
+db = client.dbsparta
+
+db.cards.insert_one({'title':'타로문 포스트','image':'https://static.wixstatic.com/media/c14a46_2c06a60192634cb3ad37801e33c8ad8e~mv2.png/v1/fill/w_838,h_605,al_c,q_95,usm_0.66_1.00_0.01/c14a46_2c06a60192634cb3ad37801e33c8ad8e~mv2.webp','desc':'포스트 개설 및 운영, 파워콘텐츠 광고 집행','url':'https://post.naver.com/tarotm1'})
+db.cards.insert_one({'title':'명운세 블로그','image':'https://static.wixstatic.com/media/c14a46_8df2b71d1a7847169c3ec327f50e0f92~mv2.png/v1/fill/w_753,h_668,al_c,q_95,usm_0.66_1.00_0.01/c14a46_8df2b71d1a7847169c3ec327f50e0f92~mv2.webp','desc':'신규 브랜드 홍보를 위해 블로그 개설 및 운영','url':'https://blog.naver.com/m_unse'})
+db.cards.insert_one({'title':'토샤 앱 기획','image':'https://tocha.kr/front/static/media/c-1-img@3x.377f1a98.png','desc':'캐릭터 브랜딩/챗봇 콘텐츠 기획 및 제작','url':'https://tocha.kr/front/tocha.html'})
+db.cards.insert_one({'title':'모딧 페이스북','image':'https://scontent-ssn1-1.xx.fbcdn.net/v/t1.0-9/44265650_272794550012297_3966349645851918336_n.jpg?_nc_cat=108&_nc_sid=6e5ad9&_nc_ohc=u0Gqtkaw5LUAX8ndapp&_nc_ht=scontent-ssn1-1.xx&oh=304d50ea699149a9db75fedc116f4af8&oe=5EC77BBB','desc':'자사 페이스북 페이지 운영','url':'https://www.facebook.com/pages/category/Internet-Company/%EB%AA%A8%EB%94%A7-114625625829191/'})
+db.cards.insert_one({'title':'모딧 브런치','image':'https://static.wixstatic.com/media/c14a46_a89458a6c0ad4e89900f4ae5d2c2c7fa~mv2.png/v1/fill/w_675,h_652,al_c,q_95,usm_0.66_1.00_0.01/c14a46_a89458a6c0ad4e89900f4ae5d2c2c7fa~mv2.webp','desc':'자사 브런치 운영','url':'https://brunch.co.kr/@moditt#articles'})
+db.cards.insert_one({'title':'토샤 인스타그램','image':'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/44917782_365174420885258_3848469397920284672_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=cTfaBCumzkQAX_IxuJv&oh=0b2bac1da3bdd95ff19ba8ce7157497a&oe=5ECE8BB6','desc':'타로 챗봇 토샤 인스타그램 운영','url':'https://www.instagram.com/tocha_zzang/'})
+db.cards.insert_one({'title':'명운세 인스타그램','image':'https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/s150x150/65449253_322027438700937_4919497176251367424_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_ohc=NA8j1lo82rwAX-uM_ZI&oh=61ebc3a8d0f1fe7fdea315959c147889&oe=5ECDB43C','desc':'사주 상담 앱 명운세 인스타그램 운영','url':'https://www.instagram.com/myoungunse/'})
+db.cards.insert_one({'title':'마음치유연구소 블로그','image':'https://static.wixstatic.com/media/c14a46_ae444fd8cc3d4edf8e12b29dc18c3f3d~mv2.png/v1/fill/w_838,h_575,al_c,q_95,usm_0.66_1.00_0.01/c14a46_ae444fd8cc3d4edf8e12b29dc18c3f3d~mv2.webp','desc':'전화심리상담 및 브랜드 홍보를 위해 블로그 개설 및 운영','url':'https://blog.naver.com/maumlabs'})
+db.cards.insert_one({'title':'마음치유연구소 포스트','image':'https://static.wixstatic.com/media/c14a46_772b7b1943a84d66aa9cd4609d931550~mv2.png/v1/fill/w_790,h_668,al_c,q_95,usm_0.66_1.00_0.01/c14a46_772b7b1943a84d66aa9cd4609d931550~mv2.webp','desc':'전화심리상담 및 브랜드 홍보를 위해 포스트 개설 및 운영/분노조절장애 자가진단 포스트 누적 조회수 17,000회 이상','url':'https://post.naver.com/maumlab2'})
+db.cards.insert_one({'title':'시즌별 프로모션','image':'https://pds.joins.com/news/component/htmlphoto_mmdata/201911/26/htm_20191126151323264212.jpg','desc':'블랙프라이데이, 할로윈, 새해 등 시즌별 프로모션 기획 및 운영','url':'https://news.joins.com/article/23642522'})

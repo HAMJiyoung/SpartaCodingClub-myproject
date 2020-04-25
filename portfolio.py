@@ -1,9 +1,9 @@
 from flask import Flask, render_template, jsonify, request
 app = Flask(__name__)
 
-from pymongo import MongoClient           # pymongo를 임포트 하기(패키지 인스톨 먼저 해야겠죠?)
-client = MongoClient('localhost', 27017)  # mongoDB는 27017 포트로 돌아갑니다.
-db = client.dbsparta                      # 'dbsparta'라는 이름의 db를 만듭니다.
+from pymongo import MongoClient
+client = MongoClient('mongodb://test:test@3.34.46.136', 27017)
+db = client.dbsparta
 
 @app.route('/')
 def home():
@@ -21,8 +21,13 @@ def write_mail():
         'message': message_receive,
     }
     db.contacts.insert_one(contact)
-    return jsonify({'result':'success', 'msg': '전송 완료!'})
+    return jsonify({'result':'success', 'msg': 'post!'})
+
+@app.route('/cards', methods=['GET'])
+def read_cards():
+    cards = list(db.cards.find({},{'_id':0}))
+    return jsonify({'result':'success', 'cards': cards})
 
 
 if __name__ == '__main__':
-    app.run('127.0.0.1', port=5000, debug=True)
+    app.run('0.0.0.0', port=5000, debug=True)
