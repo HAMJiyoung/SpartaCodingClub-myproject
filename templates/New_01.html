@@ -66,6 +66,12 @@
       margin-bottom: 6em;
     }
 
+    .card-text {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+
 
     * {
       font-family: 'Noto Sans KR', sans-serif;
@@ -158,10 +164,10 @@
           </p>\
         </header>\
         <div class="card-content">\
-          <figure class="image">\
+          <figure class="card-image is-fullwidth">\
             <img src="' + image + '" alt="Thumbnail">\
            </figure>\
-            <p class="card-text">' + desc + '</p>\
+            <div class="card-text"><div>' + desc + '</div></div>\
         </div>\
         <footer class="card-footer">\
         <a href = "' + url + '"target="_blank" class="card-footer-item">보러가기</a>\
@@ -173,7 +179,7 @@
     }
 
     function EmailCheck(email) {
-      var regEmail = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1, 2}$/;
+      var regEmail = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
       return regEmail.test(email);
     }
 
@@ -282,8 +288,7 @@
             </div>
             <br>
             <div class="buttons has-addons is-centered">
-              <a href="https://www.rocketpunch.com/@9853a6386b474c64" target="_blank"
-                class="button is-dark">RocketPunch</a>
+              <a href="https://www.rocketpunch.com/@9853a6386b474c64" target="_blank" class="button is-dark">RocketPunch</a>
               <a href="https://blog.naver.com/lovemu1220" target="_blank" class="button is-dark">Blog</a>
               <a href="https://github.com/HAMJiyoung/myproject" target="_blank" class="button is-dark">Github</a>
             </div>
@@ -294,9 +299,9 @@
         <!-- Profile picture -->
         <div class="card">
           <div class="card-image">
-            <figure class="image is-4by3">
-              <img
-                src="https://static.wixstatic.com/media/c14a46_7e4df18972f6419597f4ac576fafef1e~mv2.png/v1/fill/w_320,h_320,al_c,q_85/IMG_2907_PNG.webp"
+            <figure class="image">
+              <img 
+                src="https://static.wixstatic.com/media/c14a46_7e92d747244544dc93df08958562a6d9~mv2.png"
                 alt="Placeholder image">
             </figure>
           </div>
@@ -427,11 +432,12 @@
     <div class="section-heading">
       <h3 class="title is-2">Resume</h3>
       <h4 class="subtitle is-5">제가 지금까지 해온 일이에요.</h4>
-      <a href="#" class="button is-dark is-medium">
+      <a href="https://4bc201e7-4e98-42ee-a7cf-14d1cf9c989b.filesusr.com/ugd/c14a46_f7d41814cdb848468da81073c334ac51.pdf"
+        target="_blank" class="button is-dark is-medium">
         <span class="icon">
           <i class="fas fa-file-alt"></i>
         </span>
-        <span>Download</span>
+        <span>이력서 보기</span>
       </a>
     </div>
   </section>
@@ -451,7 +457,7 @@
 
         </div>
       </div>
-      </div>
+    </div>
   </section>
 
   <!-- Contact -->
